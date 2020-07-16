@@ -2,7 +2,8 @@ import {GET_CLIENTS, ADD_CLIENT, GET_CLIENT, CLEAR_CLIENT, CLEAR_CLIENTS} from '
 
 const initialState = {
     client: null,
-    clients: []
+    clients: [],
+    loading: true
 }
 
 export default function (state = initialState, action) {
@@ -10,25 +11,31 @@ export default function (state = initialState, action) {
     switch (type) {
         case CLEAR_CLIENT:
             return {
+                ...state,
                 client: null
             };
         case CLEAR_CLIENTS:
             return {
+                ...state,
                 clients: []
             };
         case GET_CLIENTS:
             return {
                 ...state,
-                clients: payload
+                clients: payload,
+                loading: false
             };
         case GET_CLIENT:
             return {
                 ...state,
-                client: payload
+                client: payload,
+                loading: false
             };
         case ADD_CLIENT:
             return {
-                ...state
+                ...state,
+                clients: [payload, ...state.clients],
+                loading: false
             }
         default:
             return state

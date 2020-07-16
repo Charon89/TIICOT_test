@@ -1,16 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const ClientItem = props => {
+const ClientItem = ({client: {firstName, lastName}}) => {
     return (
         <div className="item-wrapper">
-            <h2>Client Item</h2>
+            <p>{firstName}{' '}{lastName}</p>
         </div>
     );
 };
 
-ClientItem.propTypes = {
-    
-};
+ClientItem.propTypes = {};
 
 export default ClientItem;

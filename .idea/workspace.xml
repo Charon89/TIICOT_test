@@ -2,17 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76a7d23e-8f93-4dbc-87a9-6d4b3483bc93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/ClientItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/ClientList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Navigation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/redux/actions/clientActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/redux/actions/types.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/redux/reducers/clientReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/redux/reducers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/redux/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/AddClient.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Search.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/ClientItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ClientItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/ClientList.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ClientList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/clientActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/clientActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/reducers/clientReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/reducers/clientReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/clients.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/clients.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594912466773</updated>
-      <workItem from="1594912468173" duration="11921000" />
+      <workItem from="1594912468173" duration="16311000" />
     </task>
     <servers />
   </component>

@@ -1,24 +1,87 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
-.main-container{
+
+.main-container {
     width: 80%;
-    background-color: aqua;
     margin: 0 auto;
+    margin-top: 25px;
+    box-shadow: 0 0 20px 5px #eaeaea;
+    padding: 20px 25px;
 }
-.nav-wrapper{
+
+.nav-wrapper {
     width: 100%;
-    background-color: #700000;
+    display: grid;
+    grid-template-columns: 1fr 20%;
 }
-.list-wrapper{
+
+.nav-wrapper div {
+    display: flex;
+    justify-content: space-evenly;
+    grid-column: 2;
+}
+
+.nav-wrapper button {
+    padding: 10px 15px;
+    border: none;
+    border-bottom: 2px solid black;
+    color: crimson;
+}
+
+.nav-wrapper button:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.list-wrapper {
     width: 90%;
-    background-color: crimson;
     margin: 0 auto;
 }
-.item-wrapper{
+
+.item-wrapper {
     width: 90%;
-    background-color: azure;
+    margin: 10px auto;
+    padding: 15px;
+    border: 1px solid #ececec;
+    background-color: #dddddd;
+}
+
+.item-wrapper:hover {
+    background-color: rgba(221, 221, 221, 0.7);
+    cursor: pointer;
+}
+
+.add-wrapper {
+    max-width: 350px;
     margin: 0 auto;
+}
+
+.add-wrapper form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.add-wrapper input[type="text"] {
+    margin: 15px;
+    padding: 5px 15px;
+    font-size: 1.2em;
+}
+
+.btn {
+    padding: 10px 15px;
+    max-width: 150px;
+    margin: 0 auto;
+    border: none;
+    border-bottom: 2px solid black;
+    color: crimson;
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
 }

@@ -8,7 +8,6 @@ router.post('/', async (req, res) => {
     try {
         let client = new Client(req.body);
         client.save();
-        res.send("Client added");
     } catch (e) {
         console.log(e)
         return res.status(500).send("Server error")
@@ -25,4 +24,17 @@ router.get('/', async (req, res) => {
         return res.status(500).send("Server error")
     }
 });
+
+router.post('/', async (req, res) => {
+    // const {firstName, lastName} = req.body;
+    try {
+            let clients = await Client.findOne({'firstName' : req.params.firstName});
+        res.json(clients);
+
+    } catch (e) {
+        console.log(e)
+        return res.status(500).send("Server error")
+    }
+});
+
 module.exports = router;
