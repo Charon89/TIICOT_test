@@ -41,4 +41,14 @@ router.get('/:firstName', async (req, res) => {
     }
 });
 
+router.delete('/:id', async (req, res) => {
+    try {
+        let clients = await Client.findOneById(req.params.firstName);
+        res.json(clients);
+    } catch (e) {
+        console.log(e)
+        return res.status(500).send("Server error")
+    }
+});
+
 module.exports = router;
