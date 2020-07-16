@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    width: 80%;
+    background-color: aqua;
+    margin: 0 auto;
+}
+.nav-wrapper{
+    width: 100%;
+    background-color: #700000;
+}
+.list-wrapper{
+    width: 90%;
+    background-color: crimson;
+    margin: 0 auto;
+}
+.item-wrapper{
+    width: 90%;
+    background-color: azure;
+    margin: 0 auto;
+}

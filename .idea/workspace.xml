@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76a7d23e-8f93-4dbc-87a9-6d4b3483bc93" name="Default Changelist" comment="" />
+    <list default="true" id="76a7d23e-8f93-4dbc-87a9-6d4b3483bc93" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/components/ClientItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/ClientList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Navigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/redux/actions/clientActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/redux/actions/types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/redux/reducers/clientReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/redux/reducers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/redux/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1em2UvQXv5nrCnJXjjWKfhCIra1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -31,7 +47,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594912466773</updated>
-      <workItem from="1594912468173" duration="6711000" />
+      <workItem from="1594912468173" duration="11921000" />
     </task>
     <servers />
   </component>
@@ -39,9 +55,13 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1485" y="490" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594921015096">
+    <state x="1485" y="490" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594924175466">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="1485" y="490" key="#com.intellij.fileTypes.FileTypeChooser/3440.0.2560.1400/0.0.3440.1400@0.0.3440.1400" timestamp="1594921015096" />
+    <state x="1485" y="490" key="#com.intellij.fileTypes.FileTypeChooser/3440.0.2560.1400/0.0.3440.1400@0.0.3440.1400" timestamp="1594924175466" />
+    <state x="1450" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594923626625">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1450" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/3440.0.2560.1400/0.0.3440.1400@0.0.3440.1400" timestamp="1594923626625" />
   </component>
 </project>
