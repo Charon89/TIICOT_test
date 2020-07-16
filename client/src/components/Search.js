@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
 import {search_clients, getAllClients} from "../redux/actions/clientActions";
 import {connect} from 'react-redux'
+import ClientList from "./ClientList";
 import PropTypes from 'prop-types';
+import ClientItem from "./ClientItem";
 
-const Search = ({search_clients, getAllClients}) => {
+const Search = ({search_clients, clients}) => {
 
     const [formData, setFormData] = useState({
         firstName: ''
@@ -14,7 +16,6 @@ const Search = ({search_clients, getAllClients}) => {
     const onSubmit = async e => {
         e.preventDefault();
         search_clients(firstName);
-
     }
     const onChange = async e => {
         setFormData({...formData, [e.target.name]: e.target.value})
@@ -28,13 +29,18 @@ const Search = ({search_clients, getAllClients}) => {
                 <input type="text" name='firstName' value={firstName} onChange={e => onChange(e)}/>
                 <button className='btn' type='submit'> Search </button>
             </form>
+            {clients.map(client=><ClientItem key={client._id} client={client}/>)}
         </div>
     );
 };
 
-Search.propTypes = {
-
+ClientList.propTypes = {
+    search_clients: PropTypes.func.isRequired,
 };
 
-export default connect(null, {search_clients, getAllClients})(Search);
+const mapStateToProps = state => ({
+    clients: state.clientReducer.clients
+})
+
+export default connect(mapStateToProps, {search_clients})(Search);
 

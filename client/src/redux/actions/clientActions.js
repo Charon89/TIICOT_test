@@ -17,7 +17,7 @@ export const getAllClients = () => async dispatch => {
 export const search_clients = firstName => async dispatch => {
      dispatch({type: CLEAR_CLIENTS});
     try {
-        const res = await axios.get(`/clients/:${firstName}`);
+        const res = await axios.get(`/clients/${firstName}`);
         dispatch({
             type: GET_CLIENTS_BY_NAME,
             payload: res.data
