@@ -18,6 +18,7 @@ function App() {
                         <Switch>
                             <Route exact path="/" component={ClientList}/>
                             <Route exact path="/search" component={Search}/>
+                            <Route exact path="/clients/:firstName" component={ClientList}/>
                         </Switch>
                     </Router>
                 </div>

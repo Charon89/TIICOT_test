@@ -17,20 +17,24 @@ router.post('/', async (req, res) => {
 router.get('/', async (req, res) => {
 
     try {
-        let clients = await Client.find();
-        res.json(clients);
+        console.log(req)
+        if (req.params.firstName) {
+            let clients = await Client.find({"firstName": req.params.firstName});
+            res.json(clients);
+        } else {
+            let clients = await Client.find();
+            res.json(clients);
+        }
     } catch (e) {
         console.log(e)
         return res.status(500).send("Server error")
     }
 });
 
-router.post('/', async (req, res) => {
-    // const {firstName, lastName} = req.body;
+router.get('/:firstName', async (req, res) => {
     try {
-            let clients = await Client.findOne({'firstName' : req.params.firstName});
-        res.json(clients);
-
+            let clients = await Client.findOne(req.params.firstName);
+            res.json(clients);
     } catch (e) {
         console.log(e)
         return res.status(500).send("Server error")

@@ -15,7 +15,7 @@ const AddClient = ({addClient, getAllClients}) => {
     const onSubmit = async e => {
         e.preventDefault();
         addClient(formData);
-        getAllClients()
+        getAllClients();
     }
     const onChange = async e => {
         setFormData({...formData, [e.target.name]: e.target.value})

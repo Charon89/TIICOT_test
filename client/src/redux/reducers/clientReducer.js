@@ -1,4 +1,4 @@
-import {GET_CLIENTS, ADD_CLIENT, GET_CLIENT, CLEAR_CLIENT, CLEAR_CLIENTS} from '../actions/types';
+import {GET_CLIENTS, ADD_CLIENT, GET_CLIENT, CLEAR_CLIENT, CLEAR_CLIENTS, GET_CLIENTS_BY_NAME} from '../actions/types';
 
 const initialState = {
     client: null,
@@ -20,6 +20,12 @@ export default function (state = initialState, action) {
                 clients: []
             };
         case GET_CLIENTS:
+            return {
+                ...state,
+                clients: payload,
+                loading: false
+            };
+            case GET_CLIENTS_BY_NAME:
             return {
                 ...state,
                 clients: payload,
