@@ -3,7 +3,7 @@ require('dotenv').config();
 const db = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@test.cywqa.mongodb.net/Clients?retryWrites=true&w=majority`;
 
 const connectDb = async () => {
-    try {
+    try{
         await mongoose.connect(db, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
@@ -11,7 +11,7 @@ const connectDb = async () => {
             useFindAndModify: false
         });
         console.log("Connected to database")
-    } catch (e) {
+    }catch (e) {
         console.log(e)
         process.exit(1);
     }
