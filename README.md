@@ -1,6 +1,6 @@
 # TIICOT_test
 
-To start app locally use "npm run dev"Server and Client will run concurrently  
+To start app locally use "npm run dev" - Server and Client will run concurrently  
 
 To run Server use "npm run server"
 
